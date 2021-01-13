@@ -27,12 +27,7 @@
         As a <b>2nd year CS major</b> at UCSD, part of why I chose to this major was due to my interest in how technology has helped broaden connections with people all over the world. Even in a pandemic we still can communicate and connect, even if at most through a screen.
       </p>  
       
-      <section>
-        <h2>Hobbies</h2>
-        <p>
-          My hobbies include <span class="hobby">watching anime</span>, <span class="hobby">listening to music</span>, and <span class="hobby">traveling</span> when safe to do so.
-        </p>
-        <p> 
+       <p> 
           Although it does get repetitive at times.
         </p>
         
@@ -48,6 +43,35 @@
             }
            </code>
          </pre>
+      
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Some classes I've taken so far:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSE 30</td>
+            <td>Computer Organization</td>
+          </tr>
+          <tr>
+            <td>CSE 100</td>
+            <td>Advanced Data Structures</td>
+          </tr>
+          <tr>
+            <td>CSE 105</td>
+            <td>Theory of Computability</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <section>
+        <h2>Hobbies</h2>
+        <p>
+          My hobbies include <span class="hobby">watching anime</span>, <span class="hobby">listening to music</span>, and <span class="hobby">traveling</span> when safe to do so.
+        </p>
+       
       
         <section>
           <h3>Anime</h3>
@@ -130,6 +154,12 @@
         
         <section>
           <h3>Travel</h3>
+          
+          <details>
+            <summary>Note</summary>
+            All the places I've been to have been before the pandemic.
+          </details>
+          
           <p>
             Currently, I have visited many different cities in China (including Shanghai, Beijing, Hangzhou, Xiamen, etc.). I have also visited New York, Washington D.C., and Vancouver.
           </p>
@@ -150,6 +180,16 @@
             <img src="https://photos.smugmug.com/Kyoto/Kyoto-Romantic-Cherry-Blossom-Itinerary/i-dQdfWJD/0/4575e10a/L/shutterstock_1017748132-L.jpg" alt="Japan">
             <figcaption>I would love to see the cherry blossoms in Japan.</figcaption>
           </figure>
+          
+          <label for="travel-choice">Choose a city you'd like to travel to:</label>
+          <input list="travel-choices" id="travel-choice" name="travel-choice" />
+          <datalist id="travel-choices">
+            <option value="Seoul">
+            <option value="Tokyo">
+            <option value="Paris">
+            <option value="Venice">
+            <option value="London">
+          </datalist>
         
       </section>
       
