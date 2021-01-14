@@ -81,7 +81,7 @@
           <h3>Anime</h3>
           
           <picture>
-            <source srcset="https://m.media-amazon.com/images/M/MV5BNzQ1MmJjZDUtMmI5OC00ZDk2LThkODQtODgwYmU0MTIzNDhmXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" width="214">
+            <source srcset="https://m.media-amazon.com/images/M/MV5BNzQ1MmJjZDUtMmI5OC00ZDk2LThkODQtODgwYmU0MTIzNDhmXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" media="(min-width: 100px)">
             <img src="https://thegeekiary.com/wp-content/uploads/2020/08/haikyuu-season-4-part-2-scaled-e1597629186558.jpg" alt="haikyuu in japanese" />
           </picture>
           
@@ -190,10 +190,10 @@
           
           <h4>Travel Survey</h4>
           
-           <form action="" method="get" class="travel-form">
+           <form action="submit.html" method="get" class="travel-form">
              
-             <label for="start">Current date:</label> 
-             <input type="date" id="start" name="trip-start" min="2021-01-01" max="2021-12-31">
+             <label for="trip-start">Current date:</label> 
+             <input type="date" id="trip-start" name="trip-start" min="2021-01-01" max="2021-12-31">
              <br>
              
              <label for="email">Enter your gmail.com email:</label>
@@ -227,7 +227,7 @@
           
             <div class="travel-form">
               <label for="place">What other place would you like to travel to: </label>
-              <input type="text" place="place" id="place" required>
+              <input type="text" name="place" id="place" required>
             </div>
              <br>
       
@@ -296,15 +296,16 @@
           
           
         
+        </section>
       </section>
         
-        <canvas id="myCanvas" width="200" height="50" style="border:1px solid #BAA400;">
+      <canvas id="myCanvas" width="200" height="50" style="border:1px solid #BAA400;">
             Your browser does not support the HTML canvas tag.
-        </canvas>
+      </canvas>
           
-          <svg width="100" height="100">
-            <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="pink" />
-          </svg>
+      <svg width="100" height="100">
+         <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="pink" />
+      </svg>
       
     </main>
     
