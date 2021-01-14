@@ -138,11 +138,7 @@
             <li>Ed Sheeran</li>
           </ol>
           
-          <p> I met you when I was a teen<br>
-            But then you were one as well<br>
-            And I could play the guitar just like ringing a bell
-          </p>
-          <p>"Nina", by Ed Sheeran</p>
+
           
           <figure>
             <figcaption>Listen to "Gravity" by EXO:</figcaption>
@@ -196,23 +192,28 @@
           
            <form action="" method="get" class="travel-form">
              
-             <label for="start">Current date:</label>
+             <label for="start">Current date:</label> 
              <input type="date" id="start" name="trip-start" min="2021-01-01" max="2021-12-31">
+             <br>
              
              <label for="email">Enter your gmail.com email:</label>
              <input type="email" id="email" pattern=".+@gmail.com" size="30" required>
+             <br>
              
              <label for="phone">Enter your phone number:</label>
              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     required>
              <small>Format: 111-111-1111</small>
+             <br>
              
              <label for="start">Time at start of survey:</label>
              <input type="time" id="start" name="start" required>
              <small>Office hours are 9am to 6pm</small>
+             <br>
              
              <label for="hours">What's the longest # of hours you've been on a plane (0-100):</label>
              <input type="number" id="hours" name="hours" min="0" max="100">
+             <br>
           
             <label for="travel-choice">Choose a city you'd like to travel to:</label>
             <input list="travel-choices" id="travel-choice" name="travel-choice" />
@@ -223,11 +224,13 @@
                 <option value="Venice">
               <option value="London">
             </datalist>
+             <br>
           
             <div class="travel-form">
               <label for="place">What other place would you like to travel to: </label>
               <input type="text" place="place" id="place" required>
             </div>
+             <br>
       
             
             <fieldset>
@@ -241,6 +244,7 @@
               <input type="radio" id="No" name="answer">
               <label for="No">No, never</label>
             </fieldset>
+             <br>
             
             <p>What activities would you like to do while traveling:</p>
             <div>
@@ -257,6 +261,7 @@
               <input type="checkbox" id="food" name="food">
               <label for="food">Food tourism</label>
             </div>
+             <br>
             
             <label for="activity-select">What other activity would you like to do while traveling:</label>
             <select id="activity-select">
@@ -271,18 +276,22 @@
                 <option>Nap at hotel</option>
              </optgroup>
            </select>
+             <br>
              
              <label for="travelpic">Feel free to upload past travel pictures:</label>
              <input type="file" id="travelpic" name="travelpic" accept="image/png, image/jpeg">
+             <br>
              
              <label for="story">Feel free to describe the story behind your pictures:</label>
              <textarea id="story" name="story" rows="5" cols="32">
                Your travel story here
              </textarea>
+             <br>
             
             <div class="travel-form">
               <input type="submit" value="Submit">
             </div>
+             <br>
             
           </form>
           
