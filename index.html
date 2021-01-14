@@ -21,7 +21,7 @@
       </div>
       
       <p> 
-        (This quote was found from <a href="https://www.bloomberg.com/news/articles/2005-06-19/online-extra-pierre-omidyar-on-connecting-people">this Bloomberg aricle.</a>
+        (This quote was found from <a href="https://www.bloomberg.com/news/articles/2005-06-19/online-extra-pierre-omidyar-on-connecting-people">this Bloomberg aricle.)</a>
       </p>
       <p> 
         As a <b>2nd year CS major</b> at UCSD, part of why I chose to this major was due to my interest in how technology has helped broaden connections with people all over the world. Even in a pandemic we still can communicate and connect, even if at most through a screen.
@@ -44,27 +44,31 @@
            </code>
          </pre>
       
+      
       <table>
-        <thead>
-          <tr>
-            <th colspan="2">Some classes I've taken so far:</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CSE 30</td>
-            <td>Computer Organization</td>
-          </tr>
-          <tr>
-            <td>CSE 100</td>
-            <td>Advanced Data Structures</td>
-          </tr>
-          <tr>
-            <td>CSE 105</td>
-            <td>Theory of Computability</td>
-          </tr>
-        </tbody>
+        <caption>Some classes I've taken so far:</caption>
+        <colgroup>
+          <col span="1" class="class">
+          <col span="1" class="name">
+        </colgroup>
+        <tr>
+          <th scope="col">Class</th>
+          <th scope="col">Name</th>
+        </tr>
+        <tr>
+          <th scope="row">CSE 30</th>
+          <td>Computer Organization</td>
+        </tr>
+        <tr>
+          <th scope="row">CSE 100</th>
+          <td>Advanced Data Structures</td>
+        </tr>
+        <tr>
+          <th scope="row">CSE 105</th>
+          <td>Theory of Computability</td>
+        </tr>
       </table>
+      
       
       <section>
         <h2>Hobbies</h2>
@@ -77,7 +81,7 @@
           <h3>Anime</h3>
           
           <picture>
-            <source srcset="https://m.media-amazon.com/images/M/MV5BNzQ1MmJjZDUtMmI5OC00ZDk2LThkODQtODgwYmU0MTIzNDhmXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" media="(min-width: 100px)">
+            <source srcset="https://m.media-amazon.com/images/M/MV5BNzQ1MmJjZDUtMmI5OC00ZDk2LThkODQtODgwYmU0MTIzNDhmXkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_UY1200_CR85,0,630,1200_AL_.jpg" width="214">
             <img src="https://thegeekiary.com/wp-content/uploads/2020/08/haikyuu-season-4-part-2-scaled-e1597629186558.jpg" alt="haikyuu in japanese" />
           </picture>
           
@@ -164,7 +168,12 @@
             Currently, I have visited many different cities in China (including Shanghai, Beijing, Hangzhou, Xiamen, etc.). I have also visited New York, Washington D.C., and Vancouver.
           </p>
           
-          <hr>
+          <button onclick="showPhoto()">Show travel photo</button>
+          <template>
+            <h2>Shanghai, China</h2>
+            <img src="https://heremag-prod-app-deps-s3heremagassets-bfie27mzpk03.s3.amazonaws.com/wp-content/uploads/2019/08/26134157/steve-R-qbEegmVsk-unsplash-1200x675.jpg" width="214" height="204">
+          </template>
+          
           
           <p>
             In the future, I hope to visit Seoul, South Korea and Tokyo, Japan. It would also be cool to tour Europe and see cities like London, Venice, and Paris.
@@ -181,40 +190,119 @@
             <figcaption>I would love to see the cherry blossoms in Japan.</figcaption>
           </figure>
           
-          <label for="travel-choice">Choose a city you'd like to travel to:</label>
-          <input list="travel-choices" id="travel-choice" name="travel-choice" />
-          <datalist id="travel-choices">
-            <option value="Seoul">
-            <option value="Tokyo">
-            <option value="Paris">
-            <option value="Venice">
-            <option value="London">
-          </datalist>
+          <hr>
           
-          <form action="" method="get" class="travel-form">
+          <h4>Travel Survey</h4>
+          
+           <form action="" method="get" class="travel-form">
+             
+             <label for="start">Current date:</label>
+             <input type="date" id="start" name="trip-start" min="2021-01-01" max="2021-12-31">
+             
+             <label for="email">Enter your gmail.com email:</label>
+             <input type="email" id="email" pattern=".+@gmail.com" size="30" required>
+             
+             <label for="phone">Enter your phone number:</label>
+             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+             <small>Format: 111-111-1111</small>
+             
+             <label for="start">Time at start of survey:</label>
+             <input type="time" id="start" name="start" required>
+             <small>Office hours are 9am to 6pm</small>
+             
+             <label for="hours">What's the longest # of hours you've been on a plane (0-100):</label>
+             <input type="number" id="hours" name="hours" min="0" max="100">
+          
+            <label for="travel-choice">Choose a city you'd like to travel to:</label>
+            <input list="travel-choices" id="travel-choice" name="travel-choice" />
+              <datalist id="travel-choices">
+                <option value="Seoul">
+                <option value="Tokyo">
+                <option value="Paris">
+                <option value="Venice">
+              <option value="London">
+            </datalist>
+          
             <div class="travel-form">
-              <label for="place">Enter another place you'd like to travel to: </label>
+              <label for="place">What other place would you like to travel to: </label>
               <input type="text" place="place" id="place" required>
             </div>
+      
+            
+            <fieldset>
+              <legend>Have you ever traveled before?</legend>
+              <input type="radio" id="Yesmany" name="answer">
+              <label for="Yesmany">Yes, several times</label><br/>
+
+              <input type="radio" id="Yesfew" name="answer">
+              <label for="Yesfew">Yes, a few times</label><br/>
+
+              <input type="radio" id="No" name="answer">
+              <label for="No">No, never</label>
+            </fieldset>
+            
+            <p>What activities would you like to do while traveling:</p>
+            <div>
+              <input type="checkbox" id="park" name="park">
+              <label for="park">Go to amusement park</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="camp" name="camp">
+              <label for="camp">Camping</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="food" name="food">
+              <label for="food">Food tourism</label>
+            </div>
+            
+            <label for="activity-select">What other activity would you like to do while traveling:</label>
+            <select id="activity-select">
+              <optgroup label="Outside">
+                <option>Zip-lining</option>
+                <option>Bungee-jumping</option>
+                <option>Hiking</option>
+              </optgroup>
+              <optgroup label="Inside">
+                <option>Visit museum</option>
+                <option>Watch theater performance</option>
+                <option>Nap at hotel</option>
+             </optgroup>
+           </select>
+             
+             <label for="travelpic">Feel free to upload past travel pictures:</label>
+             <input type="file" id="travelpic" name="travelpic" accept="image/png, image/jpeg">
+             
+             <label for="story">Feel free to describe the story behind your pictures:</label>
+             <textarea id="story" name="story" rows="5" cols="32">
+               Your travel story here
+             </textarea>
+            
             <div class="travel-form">
               <input type="submit" value="Submit">
             </div>
+            
           </form>
           
-          <canvas id="myCanvas" width="200" height="50" style="border:1px solid #BAA400;">
+          
+        
+      </section>
+        
+        <canvas id="myCanvas" width="200" height="50" style="border:1px solid #BAA400;">
             Your browser does not support the HTML canvas tag.
-          </canvas>
+        </canvas>
           
           <svg width="100" height="100">
             <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="pink" />
           </svg>
-        
-      </section>
       
     </main>
     
     <footer>
-        <p>© 2021 Lucy Gai</p>
+      <p>© 2021 Lucy Gai</p>
+      <button name="button">Subscribe</button>
     </footer>
   </body>
 </html>
