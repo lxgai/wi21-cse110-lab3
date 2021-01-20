@@ -1,1 +1,61 @@
+/* class selector */
+.travel-form {
+  
+}
+
+/* id selector */
+#travel-choice {
+}
+
+
+/* universal selector */
+/* color name */
+* [lang^=en] {
+  color: green;
+}
+
+/* element selector */
+/* color #FFFFFF */
+a {
+  color: #11A9CF;
+}
+
+/* attribute selector */
+img[src] {
+}
+
+/* pseudo-class selector */
+/*color rgb(r,g,b) */
+a:hover {
+  color: rgb(1, 102, 133)
+}
+
+/* selector list*/
+h1, h2, h3, h4, h5, h6 { 
+  font-family: Open Sans; 
+}
+
+/* descendant combinator */
+ol li {
+
+}
+
+/* child combinator */
+figure > figcaption {
+
+}
+
+/* general sibling combinator */
+p ~ nav {
+  color: red;
+}
+
+/* adjacent sibling combinator */
+p + aside {
+  
+}
+
+/* combining two selectors */
+div.quote {
+}
 
