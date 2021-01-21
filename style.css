@@ -1,6 +1,12 @@
 /* class selector */
+/* background-color */
+/* border-style */
 .travel-form {
-  
+  background-color: #dcf1fc;
+  border-style: dashed solid;
+  border-color: #7faec7;
+  border-width: medium;
+  border-radius: 30px;
 }
 
 /* id selector */
@@ -27,12 +33,19 @@ img[src] {
 /* pseudo-class selector */
 /*color rgb(r,g,b) */
 a:hover {
-  color: rgb(1, 102, 133)
+  color: rgb(1, 102, 133);
 }
 
 /* selector list*/
-h1, h2, h3, h4, h5, h6 { 
+/* color hsl(h,s,l) */
+h2, h3, h4, h5, h6 { 
   font-family: Open Sans; 
+  color: hsl(214, 79%, 65%);
+}
+
+h1 { 
+  font-family: Open Sans; 
+  color: #0f4b70;
 }
 
 /* descendant combinator */
