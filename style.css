@@ -72,11 +72,12 @@ ol li {
 /* long margin */
 /* relative unit em and ex */
 figure > figcaption {
-  margin-top: 2em;
+  margin-top: 7em;
   margin-bottom: 2em;
   margin-left: 3em;
   margin-right: 3em;
   font-size: 1ex;
+  color: #6e8099;
 }
 
 /* general sibling combinator */
@@ -93,7 +94,7 @@ p + aside {
 /* short margin */
 /* absolute unit px and cm */
 /* padding short */
-div.quote {
+p.quote {
   border-style: groove;
   border-color: #7faec7;
   border-width: medium;
