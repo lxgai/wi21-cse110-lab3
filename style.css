@@ -22,8 +22,9 @@
 
 
 /* universal selector */
-p * {
-  color: #264157;
+/* 3rd party font */
+* {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* element selector */
@@ -35,10 +36,12 @@ a {
 /* attribute selector */
 /* auto */
 /* height */
+/* static position */
 img[src] {
   margin: 5% auto;
   height: 350px;
   width: auto;
+  position: static;
 }
 
 /* pseudo-class selector */
@@ -51,16 +54,18 @@ a:hover {
 /* color hsl(h,s,l) */
 /* relative unit ch */
 h2, h3, h4, h5, h6 { 
-  font-family: Open Sans; 
+  font-family: 'Yusei Magic', sans-serif;
   color: hsl(214, 79%, 65%);
   font-size: 3ch;
 }
 
 /* absolute unit mm */
+/* text-decoration */
 h1 { 
-  font-family: Open Sans; 
+  font-family: 'Yusei Magic', sans-serif;
   color: #0f4b70;
   font-size: 15mm; 
+  text-decoration: underline dotted;
 }
 
 /* descendant combinator */
@@ -71,6 +76,8 @@ ol li {
 /* child combinator */
 /* long margin */
 /* relative unit em and ex */
+/* display block */
+/* min-width */
 figure > figcaption {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -78,16 +85,22 @@ figure > figcaption {
   margin-right: 3em;
   font-size: 4ex;
   color: #6e8099;
+  display: block;
+  min-width: 15%;
 }
 
 /* general sibling combinator */
 /* color name */
+/* display inline */
 p ~ nav {
   color: coral;
+  display: inline;
 }
 
 /* adjacent sibling combinator */
 p + aside {
+  position: relative;
+  left: 40px;
 }
 
 /* combining two selectors */
@@ -101,5 +114,13 @@ p + aside {
   padding: 15px 15px 15px 15px;
   margin: 25px 25px 25px 25px;
   font-size: 0.5cm;
+}
+
+/* text-align */
+/* max-width */
+/* position relative */
+table {
+  text-align: center;
+  max-width: 75%;
 }
 
