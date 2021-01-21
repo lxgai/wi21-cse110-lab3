@@ -94,7 +94,7 @@ p + aside {
 /* short margin */
 /* absolute unit px and cm */
 /* padding short */
-p.quote {
+#pierre.quote {
   border-style: groove;
   border-color: #7faec7;
   border-width: medium;
