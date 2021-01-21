@@ -1,12 +1,19 @@
 /* class selector */
 /* background-color */
-/* border-style */
+/* border */
+/* padding long */
+/* width */
 .travel-form {
   background-color: #dcf1fc;
   border-style: dashed solid;
   border-color: #7faec7;
   border-width: medium;
   border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 500px;
 }
 
 /* id selector */
@@ -15,9 +22,8 @@
 
 
 /* universal selector */
-/* color name */
-* [lang^=en] {
-  color: green;
+p * {
+  color: #264157;
 }
 
 /* element selector */
@@ -27,7 +33,12 @@ a {
 }
 
 /* attribute selector */
+/* auto */
+/* height */
 img[src] {
+  margin: 5% auto;
+  height: 350px;
+  width: auto;
 }
 
 /* pseudo-class selector */
@@ -38,14 +49,18 @@ a:hover {
 
 /* selector list*/
 /* color hsl(h,s,l) */
+/* relative unit ch */
 h2, h3, h4, h5, h6 { 
   font-family: Open Sans; 
   color: hsl(214, 79%, 65%);
+  font-size: 3ch;
 }
 
+/* absolute unit mm */
 h1 { 
   font-family: Open Sans; 
   color: #0f4b70;
+  font-size: 15mm; 
 }
 
 /* descendant combinator */
@@ -54,21 +69,36 @@ ol li {
 }
 
 /* child combinator */
+/* long margin */
+/* relative unit em and ex */
 figure > figcaption {
-
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-size: 1ex;
 }
 
 /* general sibling combinator */
+/* color name */
 p ~ nav {
-  color: red;
+  color: coral;
 }
 
 /* adjacent sibling combinator */
 p + aside {
-  
 }
 
 /* combining two selectors */
+/* short margin */
+/* absolute unit px and cm */
+/* padding short */
 div.quote {
+  border-style: groove;
+  border-color: #7faec7;
+  border-width: medium;
+  padding: 15px 15px 15px 15px;
+  margin: 25px 25px 25px 25px;
+  font-size: 0.5cm;
 }
 
