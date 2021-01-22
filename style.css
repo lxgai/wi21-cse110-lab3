@@ -50,6 +50,10 @@ a:hover {
   color: rgb(1, 102, 133);
 }
 
+a:active {
+  color: #ffd257;
+}
+
 /* selector list*/
 /* color hsl(h,s,l) */
 /* relative unit ch */
@@ -124,3 +128,17 @@ table {
   max-width: 75%;
 }
 
+.flex-container img[src]{
+  height: 100px;
+  width: auto;
+}
+
+/* flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bad2e0;
+  height: 150px;
+}
