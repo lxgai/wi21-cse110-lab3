@@ -158,22 +158,27 @@ table {
     "map map photo1"
     "map map photo2";
   grid-gap: 10px 10px;
+  background-color: #2196F3;
 }
 
 .grid1 {
   grid-area: words;
+  place-self: center;
 }
 
 .grid2 {
   grid-area: map;
+  place-self: center;
 }
 
 .grid3 {
   grid-area: photo1;
+  place-self: center;
 }
 
 .grid4 {
   grid-area: photo2;
+  place-self: center;
 }
 
 /* media query */
