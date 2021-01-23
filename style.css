@@ -151,15 +151,15 @@ table {
 /* grid */
 .grid-container {
   display: grid;
-  grid-template-columns: 75px 75px 75px;
-  grid-template-rows: 75px 75px 75px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
   grid-template areas:
     "words words ."
     "map map photo1"
     "map map photo2";
-  background-color: green;
-  width: 225px;
-  height: 225px;
+  background-color: red;
+  width: 450px;
+  height: 450px;
 }
 
 .grid1 {
