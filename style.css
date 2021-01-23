@@ -158,35 +158,39 @@ table {
     "map map photo1"
     "map map photo2";
   grid-gap: 10px;
-  background-color: coral;
+  background-color: blue;
 }
 
 .grid1 {
   grid-area: words;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .grid2 {
   grid-area: map;
   display: block;
-  object-fit: cover;'
+  object-fit: contain;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .grid3 {
   grid-area: photo1;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  max-height: 100%;
 }
 
 .grid4 {
   grid-area: photo2;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* media query */
