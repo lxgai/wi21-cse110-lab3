@@ -18,6 +18,7 @@
 
 /* id selector */
 #travel-choice {
+  color: #5176b5;
 }
 
 
@@ -25,6 +26,7 @@
 /* 3rd party font */
 * {
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: #dfeef2;
 }
 
 /* element selector */
@@ -74,7 +76,7 @@ h1 {
 
 /* descendant combinator */
 ol li {
-
+  color: #73acbd;
 }
 
 /* child combinator */
@@ -102,7 +104,9 @@ p ~ nav {
 }
 
 /* adjacent sibling combinator */
+/* position: relative */
 p + aside {
+  color: #a6b5ba;
   position: relative;
   left: 40px;
 }
@@ -122,10 +126,11 @@ p + aside {
 
 /* text-align */
 /* max-width */
-/* position relative */
 table {
   text-align: center;
-  max-width: 75%;
+  max-width: 55%;
+  border-color: #7faec7;
+  border-width: 5px;
 }
 
 .flex-container img[src]{
@@ -141,4 +146,39 @@ table {
   align-items: center;
   background-color: #bad2e0;
   height: 150px;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template areas:
+    "words words ."
+    "map map photo1"
+    "map map photo2";
+  grid-gap: 10px 10px;
+}
+
+.grid1 {
+  grid-area: words;
+}
+
+.grid2 {
+  grid-area: map;
+}
+
+.grid3 {
+  grid-area: photo1;
+}
+
+.grid4 {
+  grid-area: photo2;
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #FFF0F5;
+  }
 }
