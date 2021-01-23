@@ -153,13 +153,11 @@ table {
   display: grid;
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 150px 150px;
-  grid-template areas:
+  grid-template-areas:
     "words words ."
     "map map photo1"
     "map map photo2";
-  background-color: red;
-  width: 450px;
-  height: 450px;
+  background-color: blue;
 }
 
 .grid1 {
